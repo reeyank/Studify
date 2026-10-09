@@ -22,6 +22,10 @@ apps.
 
 ## Template background (create-universal-app)
 
+<!-- markdownlint-disable MD013 MD033 MD059 -->
+<!-- The template text below is kept verbatim, so long lines, the inline
+     screenshot <img> and its original link text are not reformatted. -->
+
 > **Note:** Everything from here down to the version line is the original
 > create-universal-app template documentation, kept for reference. It
 > describes the template in general, and some details (for example the
