@@ -3,10 +3,32 @@
 This repository is the mobile and web app front end for Studify, built as a
 universal (Expo + Next.js) monorepo. The mobile app lives in `apps/expo`, the
 web app in `apps/nextjs`, and shared app code in `packages/` (see the folder
-structure below). The project was bootstrapped from the create-universal-app
-template, whose documentation follows.
+structure below).
 
-## 🌌 create-universal-app (CUA)
+## Development
+
+These commands are defined in the root `package.json` (Yarn 3 workspaces with
+Turborepo):
+
+- `yarn install` — install dependencies (also builds `packages/ui` and
+  generates the Prisma client)
+- `yarn dev` — run all apps and packages in development mode
+- `yarn web` — run the Next.js web app (`apps/nextjs`)
+- `yarn native` — run the Expo mobile app (`apps/expo`)
+- `yarn db-push` — push the Prisma schema (`packages/db/prisma/schema.prisma`)
+
+Copy `.env.example` to `.env` and fill in your own values before running the
+apps.
+
+## Template background (create-universal-app)
+
+> **Note:** Everything from here down to the version line is the original
+> create-universal-app template documentation, kept for reference. It
+> describes the template in general, and some details (for example the
+> `apps/next` folder name, which is `apps/nextjs` in this repository, and the
+> Vercel deployment steps) may not match this project exactly.
+
+### 🌌 create-universal-app (CUA)
 
 <https://user-images.githubusercontent.com/36214945/211167187-347b87ce-1c03-4678-9904-542aa78ab131.mp4>
 
@@ -17,6 +39,7 @@ template, whose documentation follows.
 [Here's](https://youtu.be/aTEv0-ZBbWk) a 20 minute Youtube tutorial going over everything if that's more of your style!
 
 You can also run `npx create-t3-universal-app` to start your project (by [albbus](https://github.com/albbus-stack/create-t3-universal-app)). Add one of the following flags if you want a specific variation of CUA:
+
 - `--with-supabase`
 - `--with-drizzle-pg`
 - `--with-drizzle-sql`
