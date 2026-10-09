@@ -1,4 +1,12 @@
-# 🌌 create-universal-app (CUA)
+# Studify
+
+This repository is the mobile and web app front end for Studify, built as a
+universal (Expo + Next.js) monorepo. The mobile app lives in `apps/expo`, the
+web app in `apps/nextjs`, and shared app code in `packages/` (see the folder
+structure below). The project was bootstrapped from the create-universal-app
+template, whose documentation follows.
+
+## 🌌 create-universal-app (CUA)
 
 <https://user-images.githubusercontent.com/36214945/211167187-347b87ce-1c03-4678-9904-542aa78ab131.mp4>
 
@@ -142,3 +150,5 @@ If it contains native code you must install it into the `/expo` folder.
 
 2. **How do I know if it contains native code?**
 In general if it involves some interactions with the phone OS like the APIs to interact with storage, camera, gyro, notification, etc. it involves native code!
+
+Version: 0.1.0
